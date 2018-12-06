@@ -550,6 +550,14 @@ main {
     padding: 15px 45px;
     justify-content: space-between;
     align-items: center;
+    &__title {
+      width: calc(100% - 100px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
     &__button {
       color: $blue-bg;
       height: 40px;
@@ -562,8 +570,36 @@ main {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background: black;
+    background: white;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: $raised-light;
   }
+}
+
+#empresa1 {
+  background-image: url('../images/js.jpg');
+}
+#empresa2 {
+  background-image: url('../images/krisman.jpg');
+}
+#empresa3 {
+  background-image: url('../images/pet.png');
+}
+#empresa4 {
+  background-image: url('../images/terc.jpg');
+}
+#empresa5 {
+  background-image: url('../images/no.png');
+}
+#empresa6 {
+  background-image: url('../images/reserva.png');
+}
+#empresa7 {
+  background-image: url('../images/square.jpg');
+}
+#empresa8 {
+  background-image: url('../images/twitch.png');
 }
 
 .results {
