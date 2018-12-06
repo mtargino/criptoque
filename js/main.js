@@ -61,8 +61,8 @@ $('.form__input').keyup(function(){ // run anytime the value changes
 
     
 
-    $('#btc').html(floor(firstValue / thirdValue)); // add them and output it
-    $('#rs').html(floor((firstValue / thirdValue) * 30)); // add them and output it
+    $('#btc').html(firstValue / thirdValue); // add them and output it
+    $('#rs').html((firstValue / thirdValue) * 30); // add them and output it
     
 // add them and output it
 });
