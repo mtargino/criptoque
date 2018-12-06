@@ -1012,7 +1012,7 @@ main {
     margin-top: 0;
   }
   .overflow-y {
-    overflow-y: hidden;
+    position: fixed;
   }
   .results {
     -webkit-box-orient: vertical;
