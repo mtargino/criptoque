@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 114.211 114.211">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#lite);
+      }
+    </style>
+    <filter id="lite" x="0" y="0" width="114.211" height="114.211" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="lite-2" data-name="lite" class="cls-1" d="M48.1,0A48.105,48.105,0,1,0,96.211,48.106,48.105,48.105,0,0,0,48.1,0ZM66.778,71.564H29.191l3.159-15.082-6.143,4.212L27.7,52.441l6.425-4.423,6.3-30.082H52.161L47.822,38.592,63.1,28.078l-1.79,8.552L46.034,47.1,43.012,61.489H68.866Z" transform="translate(9 6)"/>
+  </g>
+</svg>

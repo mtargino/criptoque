@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 124">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-1" width="100" height="124" transform="translate(1727 1655)"/>
+    </clipPath>
+  </defs>
+  <g id="ltc_icon" class="cls-2" transform="translate(-1727 -1655)">
+    <g id="noun_Litecoin_1457073" transform="translate(1606.849 1584.137)">
+      <path id="Path_23" data-name="Path 23" class="cls-3" d="M164.158,89.863l-13.965,85.252h56.614v-14.72H171.9l11.04-70.532Z" transform="translate(-6.722 0)"/>
+      <path id="Path_24" data-name="Path 24" class="cls-3" d="M186.4,139.878,184.424,151.7l-43.273,21.015,1.993-11.925Z" transform="translate(0 -37.183)"/>
+    </g>
+  </g>
+</svg>

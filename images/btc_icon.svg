@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 124">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-1" width="100" height="124" transform="translate(1481 1655)"/>
+    </clipPath>
+  </defs>
+  <g id="btc_icon" class="cls-2" transform="translate(-1481 -1655)">
+    <g id="noun_Bitcoin_884979" transform="translate(1481 1667)">
+      <g id="Group_16" data-name="Group 16">
+        <path id="Path_19" data-name="Path 19" d="M65.137,45.707v-.242c8.925-3.634,12.427-10.3,12.427-17.083,0-8-4.55-20.713-23.259-20.713V0H45.7V7.543H38.38V0H29.771V7.543H19.952V90.859h9.819V100H38.38V90.859c2.151.023,4.991.012,7.316,0V100h8.609V90.859a34.925,34.925,0,0,0,17.158-7.474,22.108,22.108,0,0,0,8.586-17.81C80.049,55.884,74.4,48.493,65.137,45.707ZM40.172,23.293h6.665c6.891,0,10.28,3.029,10.28,7.754,0,5.21-4.18,8.481-12.878,8.481H40.172V23.293Zm5.874,51.49H40.172V55.035h4.857c7.682,0,13.557,2.666,13.557,9.571C58.586,71.876,52.824,74.783,46.046,74.783Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

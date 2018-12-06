@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 124">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-1" width="100" height="124" transform="translate(1602 1655)"/>
+    </clipPath>
+  </defs>
+  <g id="eth_icon" class="cls-2" transform="translate(-1602 -1655)">
+    <g id="noun_ethereum_1529280" transform="translate(1592.44 1652.133)">
+      <g id="Group_17" data-name="Group 17" transform="translate(24.56 7.867)">
+        <path id="Path_20" data-name="Path 20" d="M25.268,65.762,58.274,85.209a1.351,1.351,0,0,0,1.377,0L92.879,65.65a1.357,1.357,0,0,0,.477-1.865L60.282,8.526a1.357,1.357,0,0,0-2.328,0L24.794,63.9a1.359,1.359,0,0,0,.475,1.865Z" transform="translate(-24.546 -7.867)"/>
+        <path id="Path_21" data-name="Path 21" d="M91.487,55.509,59.006,74.768l-32.4-19.175a1.357,1.357,0,0,0-1.8,1.952L57.9,104.3a1.356,1.356,0,0,0,2.214,0L93.286,57.462a1.358,1.358,0,0,0-1.8-1.953Z" transform="translate(-24.56 9.049)"/>
+      </g>
+      <path id="Path_22" data-name="Path 22" class="cls-3" d="M25.653,53.7,58.728,38.451l33.1,15.17" transform="translate(0.39 10.903)"/>
+      <line id="Line_2" data-name="Line 2" class="cls-3" y2="74.36" transform="translate(59.131 9.222)"/>
+      <line id="Line_3" data-name="Line 3" class="cls-3" y2="27.172" transform="translate(59.006 92.876)"/>
+    </g>
+  </g>
+</svg>

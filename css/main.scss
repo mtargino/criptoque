@@ -1,0 +1,648 @@
+$blue-bg: #2844b1;
+$blue-dark: #061347;
+$blue-navy: #152872;
+$blue-flow: #4d6adb;
+$blue-medium: #9cb1ff;
+$blue-cloudy: #bdc3da;
+$blue-light: #ebefff;
+$gold: #ffee00;
+
+$font-title: mono45-headline, monospace;
+$font-default: roboto-mono, monospace;
+
+$raised-light: 0 3px 10px 0 #06134734;
+$raised: 0 3px 16px 0 #06134759;
+$raised-top: 0 3px 32px 0 #06134794;
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+      @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+      @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+      @content;
+  }
+  @-o-keyframes #{$animation-name} {
+      @content;
+  }  
+  @keyframes #{$animation-name} {
+      @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@include keyframes(wave) {
+  0% { transform: translateY(50px); }
+  50% { transform: translateY(-50px);}
+  100% { transform: translateY(50px); }
+}
+
+@include keyframes(twirl) {
+  0% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg);}
+  100% { transform: rotate(15deg); }
+}
+
+@include keyframes(pinch) {
+  0% { transform: scale(1); }
+  80% { transform: scale(1.1);}
+  100% { transform: scale(1); }
+}
+
+@include keyframes(signal) {
+  0% { opacity: 0.5; }
+  80% { opacity: 1;}
+  100% { opacity: 0.5; }
+}
+
+::selection {
+  background: white; /* WebKit/Blink Browsers */
+  color: black
+}
+::-moz-selection {
+  background: white; /* WebKit/Blink Browsers */
+  color: black;
+}
+
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $blue-bg;
+}
+
+#b2b {
+  @include animation('twirl 2s infinite');
+}
+
+#security {
+  @include animation('pinch 2s infinite');
+}
+
+
+// Font Config
+
+h1, .h1 {
+  font-size: 4.22222222em;
+  line-height: 1.18421053em;
+  margin-top: 0.23684211em;
+  margin-bottom: 0.47368422em;
+}
+h2, .h2 {
+  font-size: 2.61111111em;
+  line-height: 1.14893617em;
+  margin-top: 0.38297872em;
+  margin-bottom: 0.38297872em;
+}
+h3, .h3 {
+  font-size: 1.61111111em;
+  line-height: 1.24137931em;
+  margin-top: 0.62068966em;
+  margin-bottom: 0em;
+}
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+h5, .h5 {
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+b {
+  text-decoration: underline;
+  text-decoration-color: $gold;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+// My styles
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $blue-bg;
+  font-family: $font-default;
+  color: white;
+  font-size: 18px;
+}
+
+main {
+  padding-top: 80px; 
+}
+
+.overflow-avoider {
+  overflow-x: hidden;
+}
+
+
+.anchor {
+  color: $blue-bg;
+  text-decoration: none;
+  &:hover {
+    color: $blue-bg;
+    text-decoration: none;
+  }        
+}
+
+.heading {
+  font-family: $font-title;
+  &__yellow {
+    color: $gold;
+  }
+  &--2 {
+    text-align: center;
+    margin-bottom: 2em;
+    &::after {
+      content: ' ';
+      position: absolute;
+      background: $gold;
+      width: 1em;
+      height: 0.15em;
+      right: calc(50% - 0.5em);
+      margin-top: 1.5em;
+    }
+  }
+  &--3 {
+    color: black;
+    text-align: center;
+    margin: 1em 0;
+    margin-bottom: 0.5em
+  }
+}
+
+.section {
+  padding: 80px 0;
+  &--footer {
+    padding: 160px 0;
+    padding-bottom: 0;
+  }
+}
+
+
+
+.quote {
+  color: $gold;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+.paragraph {
+  margin: auto;
+  &--subtitle {
+    font-size: 1.2em;
+  }
+  &__asterisc {
+    color: $gold;
+  }
+}
+
+
+
+.value {
+  padding: 15px 40px;
+  &::before {
+    content: ' ';
+    height: 1.25em;
+    width: 0.3em;
+    position: absolute;
+    background: $gold;
+    transform: translate(-1.6em, 1.3em);
+    @include animation('signal 0.3s infinite');
+  }
+  &__title {
+    color: $gold;
+  }
+  &__paragraph {
+    font-size: 0.7em;
+  }
+}
+
+.myNav {
+  position: absolute;
+  z-index: 1000;
+  &__list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: $blue-light;
+    box-shadow: $raised;
+    padding: 40px;
+    padding-top: 120px;
+    transition: all 0.3s;
+    &__item {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      margin: 1.5em 3em;
+      margin-top: 0
+    }
+  }
+  &__hamburger {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    box-shadow: $raised;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus {
+      outline: 0;
+      }
+    &:hover {
+      cursor: pointer;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      &__rect {
+        transition: all 0.3s;
+        width: 100%;
+        height: 5px;
+        background: $blue-flow;
+        &--minor {
+          width: 60%;
+        }
+      }
+    }
+    
+  }
+}
+
+.open {
+  .myNav__hamburger__icon {
+    justify-content: space-between;
+    &__rect {
+      width: 100%;
+      height: 5px;
+      background: $blue-flow;
+      &--first {
+        transform: rotate(45deg) translateY(9px) translateX(9px);
+      }
+      &--mid {
+        width: 0%;
+        align-self: center;
+        opacity: 0;
+      }
+      &--minor {
+        width: 100%;
+        transform: rotate(-45deg) translateY(-9px) translateX(9px);
+      }
+    }}
+}
+
+.progress {
+  position:fixed;
+  top:0;
+  left: 0;
+  height: 20px;
+  width: calc(100% - 80px);
+  background: white;
+  box-shadow: $raised;
+  border-radius: 0;
+  &__indicator {
+    transition: ease-out 0.3s;
+    background: $blue-flow;
+    height: 20px;
+  }
+}
+
+.outtabounds {
+  transform: translate(800px, -800px);
+}
+
+.button {
+  transition: 0.5s;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  border-radius: 80px;
+  width: fit-content;
+  margin: 3em 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border: none;
+  &:hover {
+    color: white;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  &--shadow {
+    background: $blue-dark;
+    
+  }
+  &--outline {
+    border: 2px solid white;
+  }
+  &--cta {
+    font-size: 1.1em;
+    height: 80px;
+    padding: 0 80px;
+    background: $gold;
+    color: black;
+    box-shadow: $raised;
+    &:hover {
+      color: black;
+      box-shadow: $raised-top;
+    }
+  }
+}
+
+.card {
+  background: white;
+  border: none;
+  box-shadow: $raised;
+  padding: 40px 30px;
+  margin: 15px 0;
+  transition: all 0.3s;
+  z-index: 3;
+  &__button { 
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__image {
+    height: 80px;
+  }
+
+  &__paragraph {
+    color: black;
+    font-size: 0.7em;
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+  }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $raised-top;
+    z-index: 3;
+  }
+  &--form {
+    &:hover {
+      transform: none;
+    }
+  }
+  &__inner {
+    background: $blue-light;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(5em);
+    &:hover {
+      transform: translateY(5em);
+      box-shadow: $raised;
+      z-index: 0;
+    }
+  }
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result {
+  width: 42%;
+  color: $blue-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-title;
+  font-size: 2em;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 15px;
+}
+
+.illustration {
+  margin: auto;
+}
+
+.myCoins {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding: 0 50px;
+  align-self: center;
+}
+.coins {
+  &:nth-child(1) {
+    @include animation('wave 2s infinite');
+  }
+  &:nth-child(2) {
+    animation-delay: 2s;
+    @include animation('wave 2s infinite');
+  }
+  &:nth-child(3) {
+    @include animation('wave 2s infinite');
+  }
+}
+
+@for $i from 1 through 9 {
+  .coins {
+    // :nth-child(1-9) 
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (2s / 18);
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    div {
+      margin: 0 1em;
+      width: 49.5%;
+    }
+  }
+  &__input {
+    width: 100%;
+    background: $blue-light;
+    border: none;
+    padding: 0 25px;
+    height: 60px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 4px;
+    color: $blue-dark;
+    font-size: 0.9em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    &:focus {
+      outline: none;
+      background: white;
+      box-shadow: $raised-light;
+    }
+  }
+  &__label {
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    display: block;
+    text-transform: uppercase;
+    color: $blue-dark;
+    position: relative;
+  }
+  &__button{
+    margin: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  .myCoins {
+    height: 200px;
+  }
+  .heading {
+    font-size: -0.5em;
+  }
+  .myNav {
+    &__list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: $blue-light;
+    box-shadow: $raised;
+    padding: 0;
+    padding-top: 100px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+      &__item {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin: 1.5em 3em;
+        margin-top: 0;
+      }
+    }
+  }
+  .overflow-y {
+    overflow-y: hidden;
+  }
+}
+
+.footer {
+  &__heading {
+    color: $blue-flow;
+    span {
+      opacity: 1;
+    }
+  }
+  &__illustration {
+    transform: translate(-15px, 15px); 
+  }
+
+  &__anchor {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: $blue-flow;
+    }
+  }
+}
+
