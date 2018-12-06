@@ -298,6 +298,10 @@ main {
     margin: 1em 0;
     margin-bottom: 0.5em
   }
+  &--4 {
+    color: black;
+    margin: 0;
+  }
 }
 
 .section {
@@ -473,7 +477,12 @@ main {
     
   }
   &--outline {
-    border: 2px solid white;
+    border: 2px solid $blue-bg;
+    color: $blue-bg;
+    &:hover { 
+      transform: none;
+      background: $blue-bg;
+    }
   }
   &--cta {
     font-size: 1.1em;
@@ -535,6 +544,25 @@ main {
       box-shadow: $raised;
       z-index: 0;
     }
+  }
+  &--h {
+    flex-direction: row;
+    padding: 15px 45px;
+    justify-content: space-between;
+    align-items: center;
+    &__button {
+      color: $blue-bg;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &__logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: black;
   }
 }
 
@@ -727,6 +755,12 @@ main {
   }
   .arrow{
     width: 30%;
+  }
+  .card--h {
+    flex-direction: row;
+    padding: 15px 15px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

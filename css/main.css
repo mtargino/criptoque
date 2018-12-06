@@ -412,6 +412,11 @@ main {
   margin-bottom: 0.5em;
 }
 
+.heading--4 {
+  color: black;
+  margin: 0;
+}
+
 .section {
   padding: 80px 0;
 }
@@ -640,7 +645,14 @@ main {
 }
 
 .button--outline {
-  border: 2px solid white;
+  border: 2px solid #2844b1;
+  color: #2844b1;
+}
+
+.button--outline:hover {
+  -webkit-transform: none;
+          transform: none;
+  background: #2844b1;
 }
 
 .button--cta {
@@ -723,6 +735,35 @@ main {
   -webkit-box-shadow: 0 3px 16px 0 #06134759;
           box-shadow: 0 3px 16px 0 #06134759;
   z-index: 0;
+}
+
+.card--h {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card--h__button {
+  color: #2844b1;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.card__logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: black;
 }
 
 .results {
@@ -1025,6 +1066,19 @@ main {
   }
   .arrow {
     width: 30%;
+  }
+  .card--h {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 15px 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
