@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.89 99.58">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        fill: #9cb1ff;
+      }
+
+      .cls-3 {
+        opacity: 0.37;
+      }
+
+      .cls-4 {
+        opacity: 0.7;
+      }
+    </style>
+  </defs>
+  <g id="arrow" transform="translate(-2383.555 -2003)">
+    <g id="noun_Arrow_8604" class="cls-1" transform="translate(2366 2002.64)">
+      <path id="Path_4" data-name="Path 4" class="cls-2" d="M67.344,35.056,32.652.36l-15.1,15.092,34.7,34.7L17.56,84.845l15.092,15.1L82.445,50.15Z"/>
+    </g>
+    <g id="noun_Arrow_8604-2" data-name="noun_Arrow_8604" class="cls-3" transform="translate(2431 2002.64)">
+      <path id="Path_4-2" data-name="Path 4" class="cls-2" d="M67.344,35.056,32.652.36l-15.1,15.092,34.7,34.7L17.56,84.845l15.092,15.1L82.445,50.15Z"/>
+    </g>
+    <g id="noun_Arrow_8604-3" data-name="noun_Arrow_8604" class="cls-4" transform="translate(2496 2002.64)">
+      <path id="Path_4-3" data-name="Path 4" class="cls-2" d="M67.344,35.056,32.652.36l-15.1,15.092,34.7,34.7L17.56,84.845l15.092,15.1L82.445,50.15Z"/>
+    </g>
+    <g id="noun_Arrow_8604-4" data-name="noun_Arrow_8604" transform="translate(2561 2002.64)">
+      <path id="Path_4-4" data-name="Path 4" class="cls-2" d="M67.344,35.056,32.652.36l-15.1,15.092,34.7,34.7L17.56,84.845l15.092,15.1L82.445,50.15Z"/>
+    </g>
+  </g>
+</svg>
