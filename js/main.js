@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 $.fn.digits = function(){ 
     return this.each(function(){ 
-        $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") ); 
+        $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
     })
 }
 
@@ -67,7 +67,7 @@ $('.form__input').keyup(function(){ // run anytime the value changes
 
     
 
-    $('#btc').html(Math.floor(firstValue / thirdValue)).digits(); // add them and output it
+    $('#btc').html(Number.parseFloat(firstValue / thirdValue).toFixed(4)); // add them and output it
     $('#rs').html(Math.floor((firstValue / thirdValue) * 13940.86)).digits(); // add them and output it
     
 // add them and output it

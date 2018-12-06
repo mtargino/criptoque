@@ -1071,7 +1071,7 @@ main {
 }
 
 #rs::after {
-  content: ' ,00';
+  content: ' .00';
   color: #061347;
   font-size: 20px;
   -webkit-transform: translateY(0.25em);
