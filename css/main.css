@@ -1,3 +1,120 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?76990223");
+  src: url("../fonts/fontello.eot?76990223#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?76990223") format("woff2"), url("../fonts/fontello.woff?76990223") format("woff"), url("../fonts/fontello.ttf?76990223") format("truetype"), url("../fonts/fontello.svg?76990223#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?76990223#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cancel:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-up-open:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-up-dir:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-down-open:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-down-dir:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-phone:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-location:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-path-11:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-path-12:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-linkedin:before {
+  content: '\f0e1';
+}
+
+/* '' */
+.icon-youtube-play:before {
+  content: '\f16a';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-twitter:before {
+  content: '\f309';
+}
+
+/* '' */
 @-webkit-keyframes wave {
   0% {
     -webkit-transform: translateY(50px);
@@ -634,7 +751,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: mono45-headline, monospace;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .col-md-6 {
@@ -749,6 +866,19 @@ main {
           align-items: flex-end;
 }
 
+.form select {
+  color: #061347;
+  -webkit-appearance: none;
+}
+
+.form select option {
+  border: none;
+}
+
+.form select option:disabled {
+  color: rgba(32, 49, 59, 0.486);
+}
+
 .form__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,6 +917,31 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.form__input--select::before {
+  content: '  ';
+  font-family: 'fontello';
+  font-size: 0.8em;
+  position: absolute;
+  width: 16%;
+  height: calc(100px + 1.4rem);
+  padding: 0 3%;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #061347;
 }
 
 .form__input:focus {
@@ -859,6 +1014,18 @@ main {
   .overflow-y {
     overflow-y: hidden;
   }
+  .results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arrow {
+    width: 30%;
+  }
 }
 
 .footer__heading {
@@ -877,6 +1044,7 @@ main {
 .footer__anchor {
   color: white;
   text-decoration: underline;
+  margin: 2em 0;
 }
 
 .footer__anchor:hover {
@@ -884,5 +1052,29 @@ main {
   text-decoration: underline;
   -webkit-text-decoration-color: #4d6adb;
           text-decoration-color: #4d6adb;
+}
+
+#btc::after {
+  content: ' BTC';
+  color: #4d6adb;
+  font-size: 20px;
+  margin: 0.5em;
+  -webkit-transform: translateY(0.25em);
+          transform: translateY(0.25em);
+}
+
+#rs::before {
+  content: ' R$';
+  color: #4d6adb;
+  font-size: 20px;
+  margin: 0.5em;
+}
+
+#rs::after {
+  content: ' ,00';
+  color: #061347;
+  font-size: 20px;
+  -webkit-transform: translateY(0.25em);
+          transform: translateY(0.25em);
 }
 /*# sourceMappingURL=main.css.map */

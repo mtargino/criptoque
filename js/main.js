@@ -26,43 +26,58 @@ $(document).ready(function(){
     });
 });
 
+$.fn.digits = function(){ 
+    return this.each(function(){ 
+        $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") ); 
+    })
+}
+
 $('.form__input').keyup(function(){ // run anytime the value changes
     var thirdValue;
     var firstValue  = Number($('#reais').val());   // get value of field
     var secondValue = Number($('#year').val()); // convert it to a float
 
     if(secondValue==2009) {
-        thirdValue = 0.89;
+        thirdValue = 0.001;
     }
     else if (secondValue==2010) {
-        thirdValue = 1;
+        thirdValue = 0.21;
     }
     else if (secondValue==2011) {
-        thirdValue = 5;
-    }
-    else if (secondValue==2012) {
-        thirdValue = 10;
-    }
-    else if (secondValue==2013) {
         thirdValue = 40;
     }
+    else if (secondValue==2012) {
+        thirdValue = 21;
+    }
+    else if (secondValue==2013) {
+        thirdValue = 300;
+    }
     else if (secondValue==2014) {
-        thirdValue = 100;
+        thirdValue = 1800;
     }
     else if (secondValue==2015) {
-        thirdValue = 600;
+        thirdValue = 700;
     }
     else if (secondValue==2016) {
-        thirdValue = 800;
+        thirdValue = 1800;
     }
     else if (secondValue==2017) {
-        thirdValue = 1000;
+        thirdValue = 35000;
     }
 
     
 
-    $('#btc').html(firstValue / thirdValue); // add them and output it
-    $('#rs').html((firstValue / thirdValue) * 30); // add them and output it
+    $('#btc').html(Math.floor(firstValue / thirdValue)).digits(); // add them and output it
+    $('#rs').html(Math.floor((firstValue / thirdValue) * 13940.86)).digits(); // add them and output it
     
 // add them and output it
+});
+
+$(document).ready(function() {
+    $(window).keydown(function(event){
+      if(event.keyCode == 13) {
+        event.preventDefault();
+        return false;
+      }
+    });
 });
